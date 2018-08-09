@@ -1,0 +1,21 @@
+<!--
+For testing the response.
+This file provides a html file for POST-binding.
+In order to make it more flexible, there are serveral parameters you can set.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <title>Send Login SamlResponse to AWS</title>
+</head>
+<body oncontextmenu="return false;">
+  <h3> Send Login SamlResponse to AWS </h3>
+  <h6> Input your SamlResponse base64encode content</h6>
+  <form id="saml-form" method="post" action="https://signin.aws.amazon.com/saml" autocomplete="off">
+      <input type="text" name="SAMLResponse" id="SAMLResponse" value="input" />
+      <input type="submit" value="launch">
+  </form>
+</body>
+</html>
